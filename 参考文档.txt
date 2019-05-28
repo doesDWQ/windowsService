@@ -1,0 +1,14 @@
+go编写的注册windows可执行程序服务
+
+https://blog.csdn.net/u013870094/article/details/83245450
+# 普通模式运行
+$ go build -o myserver.exe myserver.go
+$ myserver.exe
+# 注册为Windows服务
+$ myserver.exe -service-install
+# 启动和停止Windows服务
+$ myserver.exe -service-start
+$ myserver.exe -service-stop
+# 删除服务
+# 删除之前需要先停止服务
+$ myserver.exe -service-remove
