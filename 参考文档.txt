@@ -5,6 +5,8 @@ https://blog.csdn.net/u013870094/article/details/83245450
 $ go build -o myserver.exe myserver.go
 $ myserver.exe
 # 注册为Windows服务
+
+以下命令需要在管理员cmd下执行
 $ myserver.exe -service-install
 # 启动和停止Windows服务
 $ myserver.exe -service-start
